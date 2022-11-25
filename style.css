@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: #FFFFFF;
+    padding: 1rem 1.25rem;
+}
+
+header p{
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.85rem;
+    line-height: 108.2%;
+    letter-spacing: -0.03em;
+    color: #0E0E0E;
+    
+}
+
+header a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: #090909;
+}
+
+.header-left{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left .icon {
+    display: none;
+}
+
+@media screen and (max-width: 530px) {
+.header-left a {display: none;}
+.header-left a.icon {
+    /* float: right; */
+    display: block;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .header-left.responsive {position: relative;}
+    .header-left.responsive a.icon {
+        position:relative;
+        /* right: 0;
+        top: 0; */
+    }
+    .header-left.responsive a {
+        /* float: none; */
+        display: block;
+        /* text-align: left; */
+    }
+}
+
+/* Main container */
+/* top */
+.top{
+    background-image: url('./images/backgroundandme.png');
+    background-position: right;
+    background-size:cover;
+    color: #FFFFFF;
+    padding: 4.125rem 1.25rem 1.25rem 1.25rem;
+}
+
+.top p{
+    margin:0;
+    text-shadow:1px 1px 2px black;
+}
+
+.top h1{
+    margin: 0 0 0.5rem 0;
+    text-transform: capitalize;
+}
+/* Minor container and card */
+.minor-container{
+    padding: 1.125rem 1.25rem;
+}
+.card{
+    padding: 1rem;
+}
+.date,
+.project-title,
+.project-description{
+    margin: 0;
+}
+.project-image{
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.date{
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.89rem;
+    line-height: 1.125;
+    color: #000000;
+}
+
+.project-title{
+    margin-top: 0.5rem;
+    margin-bottom:  0.65rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 108.2%;
+    color: #141414;
+}
+
+.project-description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 125%;
+    /* or 20px */
+    color: #505050;
+}
+
+.page-active{
+    border-bottom: #0077b6 solid 2px;
+}
+
+#moreClick, #lessClick{
+    width: 6rem;
+    margin: 1rem auto;
+}
+
+#moreClick:hover, #lessClick:hover{
+    cursor: pointer;
+    color: #0077b6;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 2.125rem 1.25rem;
+}
+
+footer .fa{
+    margin: 0 .3rem;
+    font-size: 1.75rem;
+    color: #0077b6;
+}
+.fa-twitter,
+.fa-facebook{
+    color: #0077b6;
+}
+
+/* Aboutme.html specs */
+
+.top-aboutme{
+    padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+
+}
+
+.aboutme-image{
+    width: 11.375rem;
+    border-radius: 50%;
+}
+
+.top-aboutme-h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 108.2%;
+    /* or 38px */
+    letter-spacing: -0.03em;
+    color: #151515;
+}
+
+.guided-projects-header{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 530px){
+    .minor-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+    }
+
+    #moreClick,#lessClick{
+        grid-column: 1/-1;
+    }
+
+    .guided-projects-header{
+        grid-column: 1/-1;
+        font-size: 1.8rem;
+    }
+    .header-right i,
+    .header-right p,
+    .header-left a {
+        font-size: 1.3rem;
+    }
+
+    .pic-div{
+        display: grid;
+        grid-template: 1fr 1fr/ 1fr 3fr;
+    }
+    .aboutme-image{
+        grid-row: 1/-1;
+    }
+
+    .wide-reset{
+        margin: 0;
+    }
+
+    .top-aboutme-h1{
+        margin-top: 2rem;
+        margin-bottom:0.5rem ;
+    }
+
+    .below-pic-div{
+        margin-top: 0;
+        padding: 0 3rem;
+    }
+
+    .card{
+        box-shadow: 7px 10px 12px -5px rgba(99, 6, 221, 0.973);
+    }
+
+    .card img{
+        transition: all ease-in-out 500ms;
+    }
+    .card img:hover {
+        transform:scale(1.20);
+    
+    }
+}
+
+.container,
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+}

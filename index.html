@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="./images/memountain.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassim's Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-right" >
+            <i class="fa fa-comment" aria-hidden="true"></i>
+            <p>My learning journey</p>
+        </div>
+        <div class="header-left" id="headerLeft">
+            <a href="#" class="header-left-text page-active">home</a>
+            <a href="/aboutme.html" class="header-left-text">about me</a>
+            <a class="icon" id="icon" >
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <main class="container">
+        <section class="top">
+            <h1>My journey: Becoming a front end developer.</h1>
+            <p>This is the website that document my learning progress as a front end developer. Presented here are the many projects and products that I have
+                worked on. This is a learning that continues to evolve and expand in a multi-dimension approach.
+            </p>
+        </section>
+        <section class="minor-container">
+            <div class="card">
+                <a href="https://kasswatchlist.netlify.app" target="_blank"><img class="project-image" src="/images/moviewatchlist.jpg" 
+                    alt="image of watchlist app"></a>
+                <p class="date">December, 2022</p>
+                <h2 class="project-title">Movie Watchlist</h2>
+                <p class="project-description">This is an App that uses the OMDb API. The App allows a user to search for a movie based on a title.
+                    The user can then save the movie on a watchlist. Storage is done using local storage.
+                </p>
+            </div>
+            <div class="card">
+                <a href="https://welesdiner.netlify.app/" target="_blank"><img class="project-image" src="/images/restaurantapp.jpg" 
+                    alt="image of restaurantapp"></a>
+                <p class="date">November, 2022</p>
+                <h2 class="project-title">Restaurant Ordering App</h2>
+                <p class="project-description">This App was another opportunity to learn more JavaScript. The App mimics an ordering app where a user 
+                    selects menu item and then completes the checkout process.
+                </p>
+            </div>
+            <div class="card">
+                <a href="https://kassimtwimba.netlify.app/" target="_blank"><img class="project-image" src="/images/twimba.jpg" 
+                    alt="image of twimba app"></a>
+                <p class="date">October, 2022</p>
+                <h2 class="project-title">Twimba</h2>
+                <p class="project-description">Using JavaScript, HTML, CSS this app was created as Twitter clone. On the app a user can like, retweet, delete, and
+                    comment on a tweet. A new tweet can also be started by a user.
+                </p>
+            </div>
+            <div class="card">
+                <a href="https://twonumbercalculator.netlify.app" target="_blank"><img class="project-image" src="/images/calculatorapp.jpg" 
+                    alt="image of calculator app"></a>
+                <p class="date">November, 2022</p>
+                <h2 class="project-title">Calculator App</h2>
+                <p class="project-description">This is a two-number calculator App. With this App a user is able to perform all basic arithmetic opertaions
+                    on any two numbers. Building this App really enhanced my JavaScript skills.
+                </p>
+            </div>
+            <div class="card">
+                <a href="https://kasspasswordgen.netlify.app/" target="_blank"><img class="project-image" src="/images/passwordgenerator.jpg" 
+                    alt="image of pass ge app"></a>
+                <p class="date">October, 2022</p>
+                <h2 class="project-title">Password Generator</h2>
+                <p class="project-description">This password generator can be used to create complex passwords by a user. Passwords of various lengths can be generated, copied
+                    to the clipboard and used as desired.
+                </p>
+            </div>
+            <div class="card">
+                <a href="https://kassunitconverter.netlify.app/" target="_blank"><img class="project-image" src="/images/unitconvertor.jpg" alt="image of unit convert app"></a>
+                <p class="date">September, 2022</p>
+                <h2 class="project-title">Unit Converter</h2>
+                <p class="project-description">This unit converter is an app that makes it possible to convert between and metric units.
+                    Units of lengths, volume, and mass can be converted. Results are shown in imperial and metric units.
+                </p>
+            </div>
+            <div id="moreClick">Show more...</div>
+
+            <div class="card" id="extraDivOne" hidden>
+                <a href="https://pokeplay-ten.vercel.app/" target="_blank"><img class="project-image" src="/images/pokedex.jpg" 
+                    alt="image of pokedex app"></a>
+                <p class="date">May, 2022</p>
+                <h2 class="project-title">Pokedex App</h2>
+                <p class="project-description">This React app retrives data from the Pokemon API. The app generates two randoms hands.
+                    Upon rendering a winning deck is determined.
+                </p>
+            </div>
+            <div class="card" id="extraDivTwo" hidden>
+                <a href="https://kassoldgram.netlify.app/" target="_blank"><img class="project-image" src="/images/oldgram.jpg" 
+                    alt="image of oldgram app"></a>
+                <p class="date">October, 2022</p>
+                <h2 class="project-title">Oldgram</h2>
+                <p class="project-description">This app was a means of learning more integration between JavaScript. Through it
+                    I managed to learn how HTML can be auto-generated using JavaScript.
+                </p>
+            </div>
+            <div class="card" id="extraDivThree" hidden>
+                <a href="https://kassmemesgenerator.netlify.app/" target="_blank"><img class="project-image" src="/images/babymemes.jpg" 
+                    alt="image of baby meme app"></a>
+                <p class="date">September, 2022</p>
+                <h2 class="project-title">Baby Memes</h2>
+                <p class="project-description">Through this app you will see the expressions of emotions from baby faces.
+                    Select any emotion and watch a baby demonstrates how that emotion looks.
+                </p>
+            </div>
+
+            <div id="lessClick" hidden>Show less...</div>
+            
+        </section>
+    </main>
+    <footer>
+        <a href="https://twitter.com/kassimfrontend" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+        <a href="https://github.com/kzaid0767" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> 
+        <a href="tel:1470-494-0768"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="mailto:kzaid0767@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100086839685028" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    </footer>
+    <script src="/index.js" type="module"></script>
+</body>
+</html>
